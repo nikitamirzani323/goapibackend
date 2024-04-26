@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  backend-api:
+    container_name: backend-api
+    image: backend-api:0.0.0.1
+    build: .
+    ports:
+      - 2221:2221
+    restart: always
